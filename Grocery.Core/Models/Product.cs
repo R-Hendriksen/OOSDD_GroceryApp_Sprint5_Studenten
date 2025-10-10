@@ -2,7 +2,7 @@
 
 namespace Grocery.Core.Models
 {
-    public partial class Product : Model
+    public partial class Product : ProductCategory
     {
         [ObservableProperty]
         public int stock;
