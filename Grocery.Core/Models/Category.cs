@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Grocery.Core.Models
 {
-    public class Category(int id, string name) : ObservableObject
+    public partial class Category(int id, string name) : ObservableObject
     {
         public int Id { get; set; } = id;
         [ObservableProperty]
