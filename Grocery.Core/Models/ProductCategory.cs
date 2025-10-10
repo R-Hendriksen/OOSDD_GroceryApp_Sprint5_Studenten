@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Grocery.Core.Models
+{
+    public class ProductCategory : Category
+    {
+        public int ProductId { get; set; }
+        public int CategoryId { get; set; }
+
+        public ProductCategory(int id, string name, int productid, int categoryid) : this(id, name) {
+            ProductId = productid;
+            CategoryId = categoryid;
+        }
+
+        public ProductCategory(int id, string name) : base(id, name) {
+            ProductId = id;
+            CategoryId = default;
+        }
+        
+        
+    }
+}
